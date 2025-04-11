@@ -101,7 +101,7 @@ $tokoResult = mysqli_query($koneksi, $tokoQuery);
                 <select id="nama_toko" name="nama_toko" class="form-control" required>
                     <option value="" selected disabled>Pilih Toko</option>
                     <?php while ($row = mysqli_fetch_assoc($tokoResult)): ?>
-                        <option value="<?= htmlspecialchars($row['TokoID']); ?>">
+                        <option value="<?= htmlspecialchars($row['nama_toko']); ?>">
                             <?= htmlspecialchars($row['nama_toko']); ?>
                         </option>
                     <?php endwhile; ?>
